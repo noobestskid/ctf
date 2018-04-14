@@ -1,0 +1,3 @@
+category: scripting
+process the txt file with a script
+remove all the spaces,non-digit characters and sum the values up

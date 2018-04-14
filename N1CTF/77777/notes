@@ -1,0 +1,20 @@
+curl --data "flag=1111&hi= where 'name' not like '77777'" http://47.75.14.48 > temp
+
+in the given site
+we can see numerous tabs
+in which one of them we are given a php source code
+which is highly suspectible to being vulnerable to sql injections
+due to the fact that the query string take up to two user inputs from post request
+one is added to the query as digit and the other is as string
+the string one is being filtered before adding to it
+the original query is an UPDATE command
+it doesnt return anything but only allow us to change the column 'points' in the table 'users'
+the only thing that we see changes with different post request is the html element 'score points'
+we dont know how many users are there
+so we should somehow put admin's password in the column such that the html element can output the flag
+this can be done using subquery with the original UPDATE query
+
+!!! the user of the score that is being displayed on the website is not 77777
+
+
+

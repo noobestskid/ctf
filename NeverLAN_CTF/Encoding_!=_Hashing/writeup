@@ -1,0 +1,11 @@
+category: passwords
+use wireshark to filter out all except http packets
+sort it according to time
+look for the "401 unauthorized" and the respond packet of it
+401 status code means there is authorization credentials needed to acess 
+the requested page
+which means a username and a password should be the in respond packet
+also we can see that the authentication scheme used here is basic
+it means that base64 is used to encode the credentials
+recover it by decoding the credentials in the respond pack and you find 
+the flag

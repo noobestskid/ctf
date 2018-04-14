@@ -1,0 +1,16 @@
+I never thought this would be a RFI because i didnt look at the network tab
+and find out that im actually sending a post request to the server
+to forge a file with the data and file format(need some work) of my choice
+
+But then it would be a very new challenege to me because i have to embedd a
+php script into another format of file which will be another challenge for me
+
+If i chose the file format to embedd my script in be JPEG/PNG, it would be
+a mess because all the data are compressed
+so i have to know that BMP is what i would want as it doesnt compress the data
+which would my life much easier as all i have to do is translate each character
+of the script back to numeric representation and embedd these codes into the data field of the
+post request with a specific format 
+
+And done! A php script(using system())will be ready to be acessed with 
+the returned url to list all files in the directory

@@ -1,0 +1,4 @@
+category: forensic
+a quick run of binwalk found nothing insteresting
+so next i tried the png with stegsolve
+after a while, the flag is found using random color map 2

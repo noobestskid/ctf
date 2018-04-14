@@ -1,0 +1,28 @@
+category: interweb
+from the title of this question
+we know its about local file inclusion
+the website of this question is built using wordpress
+a free and open source content-management system
+the hint mentioned "wpscan"
+after googling, this is an automanted tool aimed at finding all the 
+vulnerabilities of a wordpress built website
+by using the tool to scan the site
+we know that the site is using SAM pro free
+an advertisements-managing plugin 
+but most importantly is that the version of it is outdated
+and there is a documented vulnerability about it which will allow us to do lfi
+the php file in the directory 
+"/wp-content/plugins/sam-pro-free/sam-pro-ajax-admin.php"
+accept user inputs without checking and load the according file
+after googling
+we know that there are two parameters we have to provide 
+"action" and "wap"
+by putting action=NA&wap=thedirectoryofthefiletoacess
+notice that the directory we provide to the wap must first be
+encoded in base64
+the question provided us the directory of the file
+that is "/var/www/blah.php" so we know it is located in the root of the server
+so we simply have to encode the directory "../../../blah.php"
+and provide it to the wap parameter
+and the flag will be displayed
+

@@ -1,0 +1,12 @@
+This one is really tricky
+the chall require you to figure out that
+there is something interesting about the ICMP packets
+(probably by the mass amount of malformed packets of the same source 
+and destination)
+Missing this clue, i got stuck
+Then you also have to notice that the malforming of them is caused by
+a single byte that is used to define the type of the ICMP packet
+After you extract all these bytes using a script then you will find out that
+it is a gif(reading the first few bytes)
+
+

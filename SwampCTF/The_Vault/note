@@ -1,0 +1,11 @@
+checked it is not vulnerable to sql injection
+found something interesting when i submit the form
+a post request with the username and password i entered combined to 
+be part of the requested url is sent 
+the response told me that the user doesnt exist
+so i tried DUNGEON_MASTER as the username and it worked
+this time the response changed to telling me that the 
+test hash doesnt match with the real hash
+i tried using another password for the username and the test hash changed
+so obviously the test hash is the hashed password
+now i just have to figure out what the password is from that youtube video...

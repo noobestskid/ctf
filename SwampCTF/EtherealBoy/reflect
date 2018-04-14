@@ -1,0 +1,6 @@
+This is a rom of the gameboy
+To do this chall, you have to make use of a gameboy simulator
+(best with BGB which comes with a debugger)
+By using the emulator
+you will find out that the flag can be seen from the tiles tab of the debugger
+Not even needing you to read the assembly!

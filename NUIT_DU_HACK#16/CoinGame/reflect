@@ -1,0 +1,27 @@
+I found the arbitary file access of the website but i missed a big part
+of the chall
+Although i noticed that what i need is somewhere inside the server but i dont 
+know the exact location of it 
+I checked the /etc/passwd but i didnt notice the tftp server thingy which deviated
+me completely and making me randomly guessing the directory
+After some fruitless attempts i decided to look into the ftp server
+(given by the chall) of it and ofcourse i found nothing 
+so i got stuck
+
+If i was aware of what tftp is then i would still have to look up
+the default directory of the tftp config file
+In the config file i would get the root directory of the tftp server
+which is obviously related the CoinGame from the folder's name
+Even if i got to here, it is very possible for me to get stuck again
+because i would not be able to acess all the files without knowing the names
+so i will probably look for any way to list the directory(which can be hard
+ only using the arbitary files acess vuln as far as i know) unless i did 
+the following
+
+The final step is to search for the name
+of the creator of the site and find out his git repository
+Having this clue then it should be pretty straight forward that the server is holding 
+the newest version of the game that hasnt been pushed to the git yet
+so i would have to jot down all the files and folders in the git repository
+and download them in the tftp server and look for any difference
+with the git command diff

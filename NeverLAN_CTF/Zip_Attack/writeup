@@ -1,0 +1,8 @@
+category: password
+this is a known plaintext attack of zip files
+we have a zip archive encrypted and another zip archive but not encrypted
+what is interesting is that the unencrypted archive contains file that is
+the same in the encrypted one
+after googling 
+we can decrypt the encrypted archive and get the flag.txt using a simple 
+programme named pkcrack

@@ -1,0 +1,14 @@
+category: interweb
+
+the website in the question is a blog that allow us to login
+taking a look at the source code
+we get the username and password of a test account
+after we log in
+we found something interesting about the cookies
+there are a total of three cookies
+"PHPSESSID=9mbh7ovnpvrqglsh761fo9n2f4; user=JohnsTestUser; permissions=user"
+we tried to change the value of the permissions cookie to "admin"
+and boom nothing happended
+the page login.php still show us that we are with user permission
+but when we changed the web page the root of it
+it showed that we are with admin permission and the flag is there    
